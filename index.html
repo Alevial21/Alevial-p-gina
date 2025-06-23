@@ -1,39 +1,63 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alevial - Fotografía</title>
-  <link rel="stylesheet" href="css/estilos.css" />
-  <link rel="icon" type="image/png" href="images/favicon.png"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alevial</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header>
-    <div class="carrusel">
-      <div class="texto-carrusel">
-        <h1>Alevial</h1>
-        <div class="botones">
-          <a href="index.html#galeria">Ver porfolio</a>
-          <a href="sobre-mi.html">Sobre mí</a>
-          <a href="contacto.html">Contacto</a>
+    <header class="navbar">
+        <nav>
+            <a href="#portfolio">Porfolio</a>
+            <a href="#about">Sobre mí</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Alevial</h1>
+            <div class="buttons">
+                <a href="#portfolio" class="btn">Ver porfolio</a>
+                <a href="#about" class="btn">Sobre mí</a>
+                <a href="#contact" class="btn">Contacto</a>
+            </div>
         </div>
-      </div>
-    </div>
-  </header>
+    </section>
 
-  <section id="galeria">
-    <h2>Porfolio</h2>
-    <div class="categorias">
-      <a href="fauna.html"><img src="images/fauna.jpg" alt="Fauna"/><span>Fauna</span></a>
-      <a href="capeas.html"><img src="images/capeas.jpg" alt="Festejos taurinos"/><span>Capeas</span></a>
-      <a href="turismo.html"><img src="images/turismo.jpg" alt="Turismo"/><span>Turismo</span></a>
-      <a href="deportes.html"><img src="images/deportes.jpg" alt="Deporte y eventos"/><span>Deportes y eventos</span></a>
-    </div>
-  </section>
+    <section id="portfolio" class="categories">
+        <h2>Porfolio</h2>
+        <div class="category-grid">
+            <div class="category"><p>Fauna</p></div>
+            <div class="category"><p>Capeas</p></div>
+            <div class="category"><p>Turismo</p></div>
+            <div class="category"><p>Eventos deportivos</p></div>
+        </div>
+    </section>
 
-  <footer>
-    Alevial
-  </footer>
+    <section id="about" class="about">
+        <h2>Sobre mí</h2>
+        <p>Me llamo Alejandro Vicente Alpuente, tengo 18 años y soy de Albarracín. La fotografía llegó a mi vida a través de la naturaleza, y poco a poco se convirtió en una forma de mirar el mundo. Empecé llevando la cámara a cada paseo por el campo, cada festejo taurino y cada evento deportivo, hasta que retratar esos momentos se volvió una necesidad.
+        <br><br>
+        Alevial es el reflejo de esa mirada: una forma de contar historias reales con sencillez, estilo rural y autenticidad.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contacto</h2>
+        <form action="mailto:Alevial21@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Nombre" required />
+            <input type="email" name="email" placeholder="Correo electrónico" required />
+            <textarea name="message" placeholder="Consulta" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <p>Sígueme en <a href="https://www.instagram.com/alevial21/" target="_blank">Instagram</a></p>
+    </section>
+
+    <footer>
+        <p>Alevial</p>
+    </footer>
 </body>
 </html>
